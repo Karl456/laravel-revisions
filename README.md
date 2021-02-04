@@ -45,31 +45,31 @@ Relationship types that can be revisioned: `hasOne`, `morphOne`, `hasMany`, `mor
 Install the package via Composer (for **Laravel 6.0 and above**):
 
 ```
-composer require neurony/laravel-revisions
+composer require karl456/laravel-revisions
 ```
 
 Install the package via Composer (for **Laravel 5.8**):
 
 ```
-composer require neurony/laravel-revisions:3.1.0
+composer require karl456/laravel-revisions:3.1.0
 ```
 
 Install the package via Composer (for **Laravel 5.7 and below**):
 
 ```
-composer require neurony/laravel-revisions:2.0.0
+composer require karl456/laravel-revisions:2.0.0
 ```
 
 Publish the config file with:
 
 ```
-php artisan vendor:publish --provider="Neurony\Revisions\ServiceProvider" --tag="config"
+php artisan vendor:publish --provider="Karl456\Revisions\ServiceProvider" --tag="config"
 ```
 
 Publish the migration file with:
 
 ```
-php artisan vendor:publish --provider="Neurony\Revisions\ServiceProvider" --tag="migrations"
+php artisan vendor:publish --provider="Karl456\Revisions\ServiceProvider" --tag="migrations"
 ```
 
 After the migration has been published you can create the `revisions` table by running:
@@ -82,7 +82,7 @@ php artisan migrate
 
 ##### Step 1
 
-Your Eloquent models should use the `Neurony\Revisions\Traits\HasRevisions` trait and the `Neurony\Revisions\Options\RevisionOptions` class.   
+Your Eloquent models should use the `Karl456\Revisions\Traits\HasRevisions` trait and the `Karl456\Revisions\Options\RevisionOptions` class.   
 
 The trait contains an abstract method `getRevisionOptions()` that you must implement yourself.   
 
@@ -94,8 +94,8 @@ Here's an example of how to implement the trait:
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use Neurony\Revisions\Options\RevisionOptions;
-use Neurony\Revisions\Traits\HasRevisions;
+use Karl456\Revisions\Options\RevisionOptions;
+use Karl456\Revisions\Traits\HasRevisions;
 
 class YourModel extends Model
 {
@@ -119,13 +119,13 @@ Inside the `revisions.php` config file, write the full namespace of your `User` 
    
 By default, this value is the FQN of Laravel's `User` model class (`\App\User`). You can also leave this `NULL` if your application doesn't have the concept of users.   
    
-This bit is used by the `Neurony\Revisions\Traits\HasRevisions` trait to know who created which revisions.
+This bit is used by the `Karl456\Revisions\Traits\HasRevisions` trait to know who created which revisions.
 
 ### Usage
 
 ##### Fetch revisions
 
-You can fetch a model record's revisions by using the `revisions()` morph to many relation present on the `Neurony\Revisions\Traits\HasRevisions` trait.
+You can fetch a model record's revisions by using the `revisions()` morph to many relation present on the `Karl456\Revisions\Traits\HasRevisions` trait.
 
 ```php
 $model = YourModel::find($id);
@@ -135,7 +135,7 @@ $revisions = $model->revisions;
 
 ##### Create revisions (automatically)
 
-Once you've used the `Neurony\Revisions\Traits\HasRevisions` trait in your Eloquent models, each time you update a model record, a revision containing its original attribute values will be created automatically using the `updated` Eloquent event: 
+Once you've used the `Karl456\Revisions\Traits\HasRevisions` trait in your Eloquent models, each time you update a model record, a revision containing its original attribute values will be created automatically using the `updated` Eloquent event: 
 
 ```php
 // model is state 1
@@ -151,7 +151,7 @@ Alternatively, you can also store a revision each time you `create` a new model 
 
 ##### Create revisions (manually)
 
-If you ever need it, you can also create a revision manually, by using the `saveAsRevision()` method from the `Neurony\Revisions\Traits\HasRevisions` trait:
+If you ever need it, you can also create a revision manually, by using the `saveAsRevision()` method from the `Karl456\Revisions\Traits\HasRevisions` trait:
 
 ```php
 $model = YourModel::find($id);
@@ -326,8 +326,8 @@ You can implement these events in your Eloquent models as you would implement an
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use Neurony\Revisions\Options\RevisionOptions;
-use Neurony\Revisions\Traits\HasRevisions;
+use Karl456\Revisions\Options\RevisionOptions;
+use Karl456\Revisions\Traits\HasRevisions;
 
 class YourModel extends Model
 {

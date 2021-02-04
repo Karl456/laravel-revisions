@@ -1,8 +1,8 @@
 <?php
 
-namespace Neurony\Revisions\Traits;
+namespace Karl456\Revisions\Traits;
 
-use Neurony\Revisions\Helpers\RelationHelper;
+use Karl456\Revisions\Helpers\RelationHelper;
 
 trait SaveRevisionJsonRepresentation
 {

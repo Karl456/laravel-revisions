@@ -1,12 +1,12 @@
 <?php
 
-namespace Neurony\Revisions\Tests;
+namespace Karl456\Revisions\Tests;
 
 use Carbon\Carbon;
 use Illuminate\Contracts\Foundation\Application;
-use Neurony\Revisions\Tests\Models\Author;
-use Neurony\Revisions\Tests\Models\Post;
-use Neurony\Revisions\Tests\Models\Tag;
+use Karl456\Revisions\Tests\Models\Author;
+use Karl456\Revisions\Tests\Models\Post;
+use Karl456\Revisions\Tests\Models\Tag;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 abstract class TestCase extends Orchestra

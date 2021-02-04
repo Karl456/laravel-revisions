@@ -1,11 +1,11 @@
 <?php
 
-namespace Neurony\Revisions\Traits;
+namespace Karl456\Revisions\Traits;
 
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Arr;
-use Neurony\Revisions\Contracts\RevisionModelContract;
-use Neurony\Revisions\Helpers\RelationHelper;
+use Karl456\Revisions\Contracts\RevisionModelContract;
+use Karl456\Revisions\Helpers\RelationHelper;
 
 trait RollbackRevisionJsonRepresentation
 {

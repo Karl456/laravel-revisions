@@ -1,11 +1,11 @@
 <?php
 
-namespace Neurony\Revisions\Models;
+namespace Karl456\Revisions\Models;
 
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
-use Neurony\Revisions\Contracts\RevisionModelContract;
+use Karl456\Revisions\Contracts\RevisionModelContract;
 
 class Revision extends Model implements RevisionModelContract
 {

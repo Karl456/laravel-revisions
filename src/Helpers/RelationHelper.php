@@ -1,6 +1,6 @@
 <?php
 
-namespace Neurony\Revisions\Helpers;
+namespace Karl456\Revisions\Helpers;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;

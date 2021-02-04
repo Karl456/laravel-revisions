@@ -1,13 +1,13 @@
 <?php
 
-namespace Neurony\Revisions;
+namespace Karl456\Revisions;
 
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
-use Neurony\Revisions\Contracts\RevisionModelContract;
-use Neurony\Revisions\Models\Revision;
+use Karl456\Revisions\Contracts\RevisionModelContract;
+use Karl456\Revisions\Models\Revision;
 
 class ServiceProvider extends BaseServiceProvider
 {

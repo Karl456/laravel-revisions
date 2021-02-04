@@ -21,10 +21,10 @@
         }
     ],
     "require": {
-        "php": "^7.2.5",
-        "illuminate/contracts": "^7.0",
-        "illuminate/support": "^7.0",
-        "illuminate/database": "^7.0"
+        "php": "^7.3|^8.0",
+        "illuminate/contracts": "^8.0",
+        "illuminate/support": "^8.0",
+        "illuminate/database": "^8.0"
     },
     "require-dev": {
         "orchestra/testbench": "^5.0",
@@ -32,12 +32,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Neurony\\Revisions\\": "src/"
+            "Karl456\\Revisions\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Neurony\\Revisions\\Tests\\": "tests"
+            "Karl456\\Revisions\\Tests\\": "tests"
         },
         "classmap": [
             "tests/TestCase.php"
@@ -52,7 +52,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Neurony\\Revisions\\ServiceProvider"
+                "Karl456\\Revisions\\ServiceProvider"
             ]
         }
     }

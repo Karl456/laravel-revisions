@@ -1,17 +1,17 @@
 <?php
 
-namespace Neurony\Revisions\Tests;
+namespace Karl456\Revisions\Tests;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
-use Neurony\Revisions\Models\Revision;
-use Neurony\Revisions\Options\RevisionOptions;
-use Neurony\Revisions\Tests\Models\Comment;
-use Neurony\Revisions\Tests\Models\Post;
-use Neurony\Revisions\Tests\Models\Tag;
+use Karl456\Revisions\Models\Revision;
+use Karl456\Revisions\Options\RevisionOptions;
+use Karl456\Revisions\Tests\Models\Comment;
+use Karl456\Revisions\Tests\Models\Post;
+use Karl456\Revisions\Tests\Models\Tag;
 
 class HasRevisionsTest extends TestCase
 {

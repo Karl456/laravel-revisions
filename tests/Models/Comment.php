@@ -1,6 +1,6 @@
 <?php
 
-namespace Neurony\Revisions\Tests\Models;
+namespace Karl456\Revisions\Tests\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Neurony\Revisions\Traits;
+namespace Karl456\Revisions\Traits;
 
 use Closure;
 use Exception;
@@ -8,10 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\DB;
-use Neurony\Revisions\Contracts\RevisionModelContract;
-use Neurony\Revisions\Helpers\RelationHelper;
-use Neurony\Revisions\Models\Revision;
-use Neurony\Revisions\Options\RevisionOptions;
+use Karl456\Revisions\Contracts\RevisionModelContract;
+use Karl456\Revisions\Helpers\RelationHelper;
+use Karl456\Revisions\Models\Revision;
+use Karl456\Revisions\Options\RevisionOptions;
 
 trait HasRevisions
 {
@@ -20,7 +20,7 @@ trait HasRevisions
 
     /**
      * The container for all the options necessary for this trait.
-     * Options can be viewed in the Neurony\Revisions\Options\RevisionOptions file.
+     * Options can be viewed in the Karl456\Revisions\Options\RevisionOptions file.
      *
      * @var RevisionOptions
      */
